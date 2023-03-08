@@ -1,0 +1,59 @@
+body {
+  background-color: ghostwhite;
+  color: indigo;
+  padding: 25px;
+  font-family: sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.profilePicture {
+  width: 320px;
+  margin-inline-end: 4rem;
+}
+
+.articleImage {
+  width: 512px;
+}
+
+.bio {
+  display: flex;
+}
+
+.blueButton {
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  padding: 0 1rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 1.25rem;
+}
+
+article {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .bio {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .article {
+    flex-direction: column;
+  }
+  .articleImage {
+    width: 100;
+  }
+}
