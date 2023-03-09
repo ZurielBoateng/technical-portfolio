@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Zuriel Boateng</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zuriel Boateng's Portfolio</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="toggle-switch.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@700&family=Work+Sans:ital,wght@0,400;0,700;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+    />
   </head>
   <body>
+    <header>
+      <nav>
+        <h1>Zuriel Boateng</h1>
+        <ul>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <label class="toggle-switch">
+          Dark Mode
+          <input type="checkbox" id="dark-mode-toggle" />
+          <div class="toggle-switch-border">
+            <div class="toggle-switch-dot"></div>
+          </div>
+        </label>
+      </div>
+    </header>
     <section class="bio">
       <img
         class="profilePicture"
-        src="file:///tmp/falkon-fhUwWI/1-16-512.webp"
+        src="https://media.licdn.com/dms/image/D4E03AQGNaSP9cBVszw/profile-displayphoto-shrink_800_800/0/1678205694502?e=2147483647&v=beta&t=_Hir0o1GxDRbXDLkC24nDcvpswzUVOfZdeMQ-pTmDLs"
       />
       <div>
         <h2>My name is Zuriel Boateng and I am a fullstack Web developer</h2>
@@ -26,12 +63,10 @@
           gaining new skills and in the future moving to software-based
           solutions.
         </p>
-        <a class="blueButton" href="www.google.com" target="_blank"
-          >Previous Work</a
-        >
+        <a class="blueButton" href="#" target="_blank">Previous Work</a>
       </div>
     </section>
-    <section>
+    <section class="Previous-work">
       <h2>Previous Work</h2>
       <article>
         <div>
@@ -42,11 +77,11 @@
             <li></li>
             <li></li>
           </ul>
-          <a href="www.github.com" target="_blank">GitHub Repo</a>
+          <a href="#" target="_blank">GitHub Repo</a>
         </div>
         <img
           class="articleImage"
-          src="https://static-assets.codecademy.com/assets/livestreams/national_coding_week/phone.png"
+          src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_3.jpg"
         />
       </article>
       <article>
@@ -66,6 +101,35 @@
         <p></p>
       </article>
     </section>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">
+            LinkedIn
+            <span class="link-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            CV
+            <span class="link-icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            GitHub
+            <span class="link-icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p class="copywright">© 2023 Zuriel Boateng</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
